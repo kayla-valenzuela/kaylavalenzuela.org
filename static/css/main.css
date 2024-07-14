@@ -57,6 +57,7 @@ tt a {
 	margin: 1em;
 }
 ul.music-list {
-	list-style-type: disc;
+	list-style-type: circle;
+	margin-left: 20px;
 }
 

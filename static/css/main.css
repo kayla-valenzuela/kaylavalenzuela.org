@@ -1,76 +1,52 @@
 body {
-    max-width: 50em;
-    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
     background-color: #f5deb3;
-    padding: 0 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h1, h2, h3 {
-    line-height: 1.2;
-}
-
-a:hover, a:hover > * {
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-}
-
-h1 {
-    font-size: x-large;
-}
-
-h2 {
-    font-size: large;
-}
-
-a {
-    text-decoration: underline;
-    color: #000;
-}
-
-ul {
-    list-style-type: disc; /* Default bullet points */
-    padding-left: 20px; /* Ensure list items are indented */
-}
-
-pre {
-    white-space: pre; /* Preserve exact spacing and line breaks */
-    font-family: monospace; /* Better for ASCII art */
-    font-size: 16px;
-}
-
-@media print {
-    body {
-        max-width: none;
-    }
-}
-
-table tr td {
-    line-height: 1.25em;
-}
-
-tt a {
-    background: #ddddea;
-    text-decoration: none;
-    color: blue;
 }
 
 .container {
-    width: 100%;
     display: flex;
-    flex-direction: row; /* Ensure items are side by side */
-    gap: 20px; /* Space between items */
-    padding: 20px;
+    align-items: flex-end; 
+    gap: 20px;
 }
 
-.container > * {
-    flex: 1;
-    margin: 0; /* Remove default margin, handle spacing with gap */
+.ascii-art pre {
+    white-space: pre; 
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 16px;
 }
 
-ul.music-list {
-    list-style-type: circle;
-    margin-left: 20px;
+.info {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0; 
+}
+
+ul li::before {
+    content: "=>";
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000; 
+}
+
+a:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
 }

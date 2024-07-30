@@ -6,60 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./static/css/main.css">
     <title>a personal website - out there in space</title>
-    <style>
-        .container {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            gap: 20px;
-            padding: 20px;
-        }
-        .ascii-art {
-            flex: 1;
-            white-space: pre;
-            overflow-x: auto;
-            font-family: monospace;
-            line-height: 1.2;
-            font-size: 16px;
-        }
-        .info {
-            flex: 1;
-            margin-top: 0;
-        }
-        .info ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .info li {
-            margin: 5px 0; /* Add some vertical spacing between items */
-            position: relative;
-            padding-left: 20px; /* Space for custom bullet */
-        }
-        .info li::before {
-            content: "=>";
-            position: absolute;
-            left: 0;
-            color: #000; /* Adjust color as needed */
-        }
-        .info a {
-            text-decoration: none;
-            color: #000; /* Black color for links, adjust as needed */
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <div class="info">
-            <article>
-                <ul>
-                    <li><a href="./about.html">about</a></li>
-                    <li><a href="./resume.pdf">resume</a></li>
-                    <li><a href="./publickey.html">public key</a></li>
-                    <li><a href="mailto:tayval@protonmail.com">contact</a></li>
-                </ul>
-            </article>
-        </div>
         <div class="ascii-art">
             <pre>
                       _                        
@@ -78,6 +27,16 @@
                [bug] .*' /  .*' ; .*`- +'  `*' 
                      `*-*   `*-*  `*-*'        
             </pre>
+        </div>
+        <div class="info">
+            <article>
+                <ul>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./resume.pdf">resume</a></li>
+                    <li><a href="./publickey.html">public key</a></li>
+                    <li><a href="mailto:tayval@protonmail.com">contact</a></li>
+                </ul>
+            </article>
         </div>
     </div>
 </body>

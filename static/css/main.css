@@ -2,19 +2,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 100vh; /* Full viewport height */
     margin: 0;
     background-color: #f5deb3;
 }
 
 .container {
     display: flex;
-    align-items: flex-end; 
+    align-items: flex-end; /* Align items to the bottom */
     gap: 20px;
 }
 
 .ascii-art pre {
-    white-space: pre; 
+    white-space: pre; /* Preserve exact spacing and line breaks */
     margin: 0;
     padding: 0;
     font-family: monospace;
@@ -24,6 +24,7 @@ body {
 .info {
     font-family: monospace;
     font-size: 16px;
+    text-align: right; /* Align text to the right if needed */
 }
 
 ul {
@@ -32,7 +33,7 @@ ul {
 }
 
 ul li {
-    margin: 5px 0; 
+    margin: 5px 0; /* Add some vertical spacing between items */
 }
 
 ul li::before {
@@ -42,7 +43,7 @@ ul li::before {
 
 a {
     text-decoration: none;
-    color: #000; 
+    color: #000; /* Adjust as needed */
 }
 
 a:hover {

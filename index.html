@@ -32,11 +32,19 @@
             padding: 0;
         }
         .info li {
-            margin: 5px 0;
+            margin: 5px 0; /* Add some vertical spacing between items */
+            position: relative;
+            padding-left: 20px; /* Space for custom bullet */
+        }
+        .info li::before {
+            content: "=>";
+            position: absolute;
+            left: 0;
+            color: #000; /* Adjust color as needed */
         }
         .info a {
             text-decoration: none;
-            color: #000;
+            color: #000; /* Black color for links, adjust as needed */
         }
     </style>
 </head>
@@ -74,4 +82,3 @@
     </div>
 </body>
 </html>
-

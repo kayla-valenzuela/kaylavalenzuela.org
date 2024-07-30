@@ -1,61 +1,75 @@
 body {
-    max-width:50em;
-    line-height:1.6;
-    background-color:#f5deb3;
-    padding:0 10px;
-    margin-left:auto;
-    margin-right:auto;
-} 
-h1,h2,h3 {
-    line-height:1.2
+    max-width: 50em;
+    line-height: 1.6;
+    background-color: #f5deb3;
+    padding: 0 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
-a:hover, a:hover > * {
-    background-color:#000;
-    color:#fff;
-    text-decoration:none
-}
-h1 {
-    font-size: x-large
-}
-h2 {
-    font-size: large
-}
-a {
-    text-decoration:underline;
-    color:#000
-}
-ul { 
-    list-style: "=>  "
-}
-pre {
-    white-space: pre-wrap; 
-    font-family: serif;
-    font-size:16px
-}
-h1 {
+
+h1, h2, h3 {
     line-height: 1.2;
 }
+
+a:hover, a:hover > * {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    font-size: large;
+}
+
+a {
+    text-decoration: underline;
+    color: #000;
+}
+
+ul {
+    list-style-type: disc; /* Default bullet points */
+    padding-left: 20px; /* Ensure list items are indented */
+}
+
+pre {
+    white-space: pre; /* Preserve exact spacing and line breaks */
+    font-family: monospace; /* Better for ASCII art */
+    font-size: 16px;
+}
+
 @media print {
     body {
         max-width: none;
     }
 }
+
 table tr td {
     line-height: 1.25em;
 }
+
 tt a {
     background: #ddddea;
     text-decoration: none;
     color: blue;
 }
+
 .container {
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row; /* Ensure items are side by side */
+    gap: 20px; /* Space between items */
+    padding: 20px;
 }
+
 .container > * {
-    margin: 1em;
+    flex: 1;
+    margin: 0; /* Remove default margin, handle spacing with gap */
 }
+
 ul.music-list {
     list-style-type: circle;
     margin-left: 20px;

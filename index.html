@@ -7,39 +7,41 @@
 <link rel=stylesheet href="./static/css/main.css">
 <title>a personal website - out there in space</title>
 <style>
-    .ascii-art {
+    .container {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+    .ascii-art {
+        flex: 1;
         white-space: pre;
         overflow-x: auto;
         font-family: monospace;
         line-height: 1.2;
-        font-size: -8;
+        font-size: 16px;
     }
     .info {
-        display: flex;
-        flex-direction:row;
-        margin-top: 25em;
+        flex: 1;
+        margin-top: 0;
     }
 </style>
 </head>
 <body>
-<div class="info">
-<article>
-<!--<h1>kayla's hypertext homepage</h1> links: -->
-<ul>
-<li><a href="./about.html">about</a></li>
-<li><a href="./resume.pdf">resume</a></li>
-<li><a href="./publickey.html">public key</a></li>
-<li><a href="mailto:tayval@protonmail.com">contact</a></li>
-</article>
+    <div class="container">
+        <div class="info">
+            <article>
+                <ul>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./resume.pdf">resume</a></li>
+                    <li><a href="./publickey.html">public key</a></li>
+                    <li><a href="mailto:tayval@protonmail.com">contact</a></li>
+            </article>
 </div>
-<div class="ascii-art">
-<center>
-
-
-
-
+    <div class="ascii-art">
+        <div>
+            <pre>
                       _                        
                       \`*-.                    
                        )  _`-.                 
@@ -55,12 +57,8 @@
                         ; '   : :`-:     _.`* ;
                [bug] .*' /  .*' ; .*`- +'  `*' 
                      `*-*   `*-*  `*-*'        
-
-
-
-
-
-</center>
-</div>
+            </pre>
+        </div>
+    </div>
 </body>
 </html>

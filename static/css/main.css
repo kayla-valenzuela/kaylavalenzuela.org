@@ -25,12 +25,7 @@ body {
     font-family: 'MomTypewriter', sans-serif;
 }
 
-@media (max-width: 700px) {
-    .ascii-art pre {
-       font-family: calibri;
-       width: 300px; // reduce this thing's width for smaller viewports
-    }
-}
+
 
 .container {
     display: flex;
@@ -46,6 +41,12 @@ body {
     font-size: 16px;
 }
 
+@media (max-width: 700px) {
+    .ascii-art pre {
+       font-family: calibri;
+       width: 300px; // reduce this thing's width for smaller viewports
+    }
+}
 .info {
     font-family: monospace;
     font-size: 16px;
